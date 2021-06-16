@@ -3,20 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D7AD3562679AAF2009873A3 /* XCSourceTextBuffer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7AD3552679AAF2009873A3 /* XCSourceTextBuffer+Extensions.swift */; };
+		9D7AD35A2679AED7009873A3 /* XCSourceTextRange+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7AD3592679AED7009873A3 /* XCSourceTextRange+Extensions.swift */; };
+		9D7AD35C2679AF23009873A3 /* XCSourceTextPosition+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7AD35B2679AF23009873A3 /* XCSourceTextPosition+Extensions.swift */; };
 		9DD37023267988B3001C73F0 /* XCAdditionsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD37022267988B3001C73F0 /* XCAdditionsApp.swift */; };
 		9DD37025267988B3001C73F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD37024267988B3001C73F0 /* ContentView.swift */; };
 		9DD37027267988B5001C73F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DD37026267988B5001C73F0 /* Assets.xcassets */; };
 		9DD3702A267988B5001C73F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DD37029267988B5001C73F0 /* Preview Assets.xcassets */; };
 		9DD37039267989C5001C73F0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DD37038267989C5001C73F0 /* Cocoa.framework */; };
 		9DD3703E267989C5001C73F0 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD3703D267989C5001C73F0 /* SourceEditorExtension.swift */; };
-		9DD37040267989C5001C73F0 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD3703F267989C5001C73F0 /* SourceEditorCommand.swift */; };
 		9DD37045267989C5001C73F0 /* XCAdditionsExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9DD37036267989C5001C73F0 /* XCAdditionsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9DD3704A267989CF001C73F0 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DD3703A267989C5001C73F0 /* XcodeKit.framework */; };
 		9DD3704B267989CF001C73F0 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9DD3703A267989C5001C73F0 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9DD3704E2679A4D4001C73F0 /* MoveToHomeCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD3704D2679A4D4001C73F0 /* MoveToHomeCommand.swift */; };
+		9DD370502679A54A001C73F0 /* CommandDefinable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD3704F2679A54A001C73F0 /* CommandDefinable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9D7AD3552679AAF2009873A3 /* XCSourceTextBuffer+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCSourceTextBuffer+Extensions.swift"; sourceTree = "<group>"; };
+		9D7AD3592679AED7009873A3 /* XCSourceTextRange+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCSourceTextRange+Extensions.swift"; sourceTree = "<group>"; };
+		9D7AD35B2679AF23009873A3 /* XCSourceTextPosition+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCSourceTextPosition+Extensions.swift"; sourceTree = "<group>"; };
 		9DD3701F267988B3001C73F0 /* XCAdditions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCAdditions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DD37022267988B3001C73F0 /* XCAdditionsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCAdditionsApp.swift; sourceTree = "<group>"; };
 		9DD37024267988B3001C73F0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,9 +73,10 @@
 		9DD37038267989C5001C73F0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		9DD3703A267989C5001C73F0 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
 		9DD3703D267989C5001C73F0 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
-		9DD3703F267989C5001C73F0 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
 		9DD37041267989C5001C73F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DD37042267989C5001C73F0 /* XCAdditionsExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XCAdditionsExtension.entitlements; sourceTree = "<group>"; };
+		9DD3704D2679A4D4001C73F0 /* MoveToHomeCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveToHomeCommand.swift; sourceTree = "<group>"; };
+		9DD3704F2679A54A001C73F0 /* CommandDefinable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandDefinable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,10 +151,14 @@
 		9DD3703C267989C5001C73F0 /* XCAdditionsExtension */ = {
 			isa = PBXGroup;
 			children = (
+				9DD3704D2679A4D4001C73F0 /* MoveToHomeCommand.swift */,
 				9DD3703D267989C5001C73F0 /* SourceEditorExtension.swift */,
-				9DD3703F267989C5001C73F0 /* SourceEditorCommand.swift */,
 				9DD37041267989C5001C73F0 /* Info.plist */,
 				9DD37042267989C5001C73F0 /* XCAdditionsExtension.entitlements */,
+				9DD3704F2679A54A001C73F0 /* CommandDefinable.swift */,
+				9D7AD3552679AAF2009873A3 /* XCSourceTextBuffer+Extensions.swift */,
+				9D7AD3592679AED7009873A3 /* XCSourceTextRange+Extensions.swift */,
+				9D7AD35B2679AF23009873A3 /* XCSourceTextPosition+Extensions.swift */,
 			);
 			path = XCAdditionsExtension;
 			sourceTree = "<group>";
@@ -187,6 +199,8 @@
 			dependencies = (
 			);
 			name = XCAdditionsExtension;
+			packageProductDependencies = (
+			);
 			productName = XCAdditionsExtension;
 			productReference = 9DD37036267989C5001C73F0 /* XCAdditionsExtension.appex */;
 			productType = "com.apple.product-type.xcode-extension";
@@ -209,7 +223,7 @@
 				};
 			};
 			buildConfigurationList = 9DD3701A267988B3001C73F0 /* Build configuration list for PBXProject "XCAdditions" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -260,8 +274,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D7AD3562679AAF2009873A3 /* XCSourceTextBuffer+Extensions.swift in Sources */,
+				9D7AD35C2679AF23009873A3 /* XCSourceTextPosition+Extensions.swift in Sources */,
+				9D7AD35A2679AED7009873A3 /* XCSourceTextRange+Extensions.swift in Sources */,
+				9DD3704E2679A4D4001C73F0 /* MoveToHomeCommand.swift in Sources */,
 				9DD3703E267989C5001C73F0 /* SourceEditorExtension.swift in Sources */,
-				9DD37040267989C5001C73F0 /* SourceEditorCommand.swift in Sources */,
+				9DD370502679A54A001C73F0 /* CommandDefinable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +473,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.caph.XCAdditions.XCAdditionsExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -476,6 +495,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.caph.XCAdditions.XCAdditionsExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
