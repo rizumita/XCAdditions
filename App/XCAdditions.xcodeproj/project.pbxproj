@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		9D6A4F5F267AB8F700E03BF6 /* MoveToHome in Frameworks */ = {isa = PBXBuildFile; productRef = 9D6A4F5E267AB8F700E03BF6 /* MoveToHome */; };
 		9D7AD3562679AAF2009873A3 /* XCSourceTextBuffer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7AD3552679AAF2009873A3 /* XCSourceTextBuffer+Extensions.swift */; };
-		9D7AD35A2679AED7009873A3 /* XCSourceTextRange+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7AD3592679AED7009873A3 /* XCSourceTextRange+Extensions.swift */; };
-		9D7AD35C2679AF23009873A3 /* XCSourceTextPosition+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7AD35B2679AF23009873A3 /* XCSourceTextPosition+Extensions.swift */; };
 		9DD37023267988B3001C73F0 /* XCAdditionsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD37022267988B3001C73F0 /* XCAdditionsApp.swift */; };
 		9DD37025267988B3001C73F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD37024267988B3001C73F0 /* ContentView.swift */; };
 		9DD37027267988B5001C73F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DD37026267988B5001C73F0 /* Assets.xcassets */; };
@@ -61,8 +59,6 @@
 
 /* Begin PBXFileReference section */
 		9D7AD3552679AAF2009873A3 /* XCSourceTextBuffer+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCSourceTextBuffer+Extensions.swift"; sourceTree = "<group>"; };
-		9D7AD3592679AED7009873A3 /* XCSourceTextRange+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCSourceTextRange+Extensions.swift"; sourceTree = "<group>"; };
-		9D7AD35B2679AF23009873A3 /* XCSourceTextPosition+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCSourceTextPosition+Extensions.swift"; sourceTree = "<group>"; };
 		9DD3701F267988B3001C73F0 /* XCAdditions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCAdditions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DD37022267988B3001C73F0 /* XCAdditionsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCAdditionsApp.swift; sourceTree = "<group>"; };
 		9DD37024267988B3001C73F0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -159,8 +155,6 @@
 				9DD37042267989C5001C73F0 /* XCAdditionsExtension.entitlements */,
 				9DD3704F2679A54A001C73F0 /* CommandDefinable.swift */,
 				9D7AD3552679AAF2009873A3 /* XCSourceTextBuffer+Extensions.swift */,
-				9D7AD3592679AED7009873A3 /* XCSourceTextRange+Extensions.swift */,
-				9D7AD35B2679AF23009873A3 /* XCSourceTextPosition+Extensions.swift */,
 			);
 			path = XCAdditionsExtension;
 			sourceTree = "<group>";
@@ -280,8 +274,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D7AD3562679AAF2009873A3 /* XCSourceTextBuffer+Extensions.swift in Sources */,
-				9D7AD35C2679AF23009873A3 /* XCSourceTextPosition+Extensions.swift in Sources */,
-				9D7AD35A2679AED7009873A3 /* XCSourceTextRange+Extensions.swift in Sources */,
 				9DD3704E2679A4D4001C73F0 /* MoveToHomeCommand.swift in Sources */,
 				9DD3703E267989C5001C73F0 /* SourceEditorExtension.swift in Sources */,
 				9DD370502679A54A001C73F0 /* CommandDefinable.swift in Sources */,
