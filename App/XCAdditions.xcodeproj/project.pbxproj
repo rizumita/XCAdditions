@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A329AAD267C047100926519 /* StartNewLineCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A329AAC267C047100926519 /* StartNewLineCommand.swift */; };
+		6A5D423E267BFFF700E2120B /* Base in Frameworks */ = {isa = PBXBuildFile; productRef = 6A5D423D267BFFF700E2120B /* Base */; };
+		6A5D4240267C000D00E2120B /* StartNewLine in Frameworks */ = {isa = PBXBuildFile; productRef = 6A5D423F267C000D00E2120B /* StartNewLine */; };
 		9D6A4F5F267AB8F700E03BF6 /* MoveToHome in Frameworks */ = {isa = PBXBuildFile; productRef = 9D6A4F5E267AB8F700E03BF6 /* MoveToHome */; };
 		9D7AD3562679AAF2009873A3 /* XCSourceTextBuffer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7AD3552679AAF2009873A3 /* XCSourceTextBuffer+Extensions.swift */; };
 		9DD37023267988B3001C73F0 /* XCAdditionsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD37022267988B3001C73F0 /* XCAdditionsApp.swift */; };
@@ -58,6 +61,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6A329AAC267C047100926519 /* StartNewLineCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartNewLineCommand.swift; sourceTree = "<group>"; };
 		9D7AD3552679AAF2009873A3 /* XCSourceTextBuffer+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCSourceTextBuffer+Extensions.swift"; sourceTree = "<group>"; };
 		9DD3701F267988B3001C73F0 /* XCAdditions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCAdditions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DD37022267988B3001C73F0 /* XCAdditionsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCAdditionsApp.swift; sourceTree = "<group>"; };
@@ -90,13 +94,24 @@
 			files = (
 				9D6A4F5F267AB8F700E03BF6 /* MoveToHome in Frameworks */,
 				9DD37039267989C5001C73F0 /* Cocoa.framework in Frameworks */,
+				6A5D4240267C000D00E2120B /* StartNewLine in Frameworks */,
 				9DD3704A267989CF001C73F0 /* XcodeKit.framework in Frameworks */,
+				6A5D423E267BFFF700E2120B /* Base in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A329AAE267C047600926519 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				6A329AAC267C047100926519 /* StartNewLineCommand.swift */,
+				9DD3704D2679A4D4001C73F0 /* MoveToHomeCommand.swift */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
 		9DD37016267988B3001C73F0 = {
 			isa = PBXGroup;
 			children = (
@@ -149,7 +164,7 @@
 		9DD3703C267989C5001C73F0 /* XCAdditionsExtension */ = {
 			isa = PBXGroup;
 			children = (
-				9DD3704D2679A4D4001C73F0 /* MoveToHomeCommand.swift */,
+				6A329AAE267C047600926519 /* Commands */,
 				9DD3703D267989C5001C73F0 /* SourceEditorExtension.swift */,
 				9DD37041267989C5001C73F0 /* Info.plist */,
 				9DD37042267989C5001C73F0 /* XCAdditionsExtension.entitlements */,
@@ -199,6 +214,8 @@
 			name = XCAdditionsExtension;
 			packageProductDependencies = (
 				9D6A4F5E267AB8F700E03BF6 /* MoveToHome */,
+				6A5D423D267BFFF700E2120B /* Base */,
+				6A5D423F267C000D00E2120B /* StartNewLine */,
 			);
 			productName = XCAdditionsExtension;
 			productReference = 9DD37036267989C5001C73F0 /* XCAdditionsExtension.appex */;
@@ -276,6 +293,7 @@
 				9D7AD3562679AAF2009873A3 /* XCSourceTextBuffer+Extensions.swift in Sources */,
 				9DD3704E2679A4D4001C73F0 /* MoveToHomeCommand.swift in Sources */,
 				9DD3703E267989C5001C73F0 /* SourceEditorExtension.swift in Sources */,
+				6A329AAD267C047100926519 /* StartNewLineCommand.swift in Sources */,
 				9DD370502679A54A001C73F0 /* CommandDefinable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +433,7 @@
 				CODE_SIGN_ENTITLEMENTS = XCAdditions/XCAdditions.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"XCAdditions/Preview Content\"";
 				DEVELOPMENT_TEAM = RV6DJ2NMCD;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -425,7 +444,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 0.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.caph.XCAdditions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -441,6 +460,7 @@
 				CODE_SIGN_ENTITLEMENTS = XCAdditions/XCAdditions.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"XCAdditions/Preview Content\"";
 				DEVELOPMENT_TEAM = RV6DJ2NMCD;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -451,7 +471,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 0.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.caph.XCAdditions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -464,6 +484,7 @@
 				CODE_SIGN_ENTITLEMENTS = XCAdditionsExtension/XCAdditionsExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = RV6DJ2NMCD;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = XCAdditionsExtension/Info.plist;
@@ -473,7 +494,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 0.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.caph.XCAdditions.XCAdditionsExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -487,6 +508,7 @@
 				CODE_SIGN_ENTITLEMENTS = XCAdditionsExtension/XCAdditionsExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = RV6DJ2NMCD;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = XCAdditionsExtension/Info.plist;
@@ -496,7 +518,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 0.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.caph.XCAdditions.XCAdditionsExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -537,6 +559,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		6A5D423D267BFFF700E2120B /* Base */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Base;
+		};
+		6A5D423F267C000D00E2120B /* StartNewLine */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = StartNewLine;
+		};
 		9D6A4F5E267AB8F700E03BF6 /* MoveToHome */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = MoveToHome;
