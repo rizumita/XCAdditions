@@ -3,6 +3,7 @@
 //
 
 import Foundation
+@_exported import Base
 
 public typealias Position = (line: Int, column: Int)
 
