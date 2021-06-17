@@ -433,6 +433,7 @@
 				CODE_SIGN_ENTITLEMENTS = XCAdditions/XCAdditions.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"XCAdditions/Preview Content\"";
 				DEVELOPMENT_TEAM = RV6DJ2NMCD;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -443,7 +444,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 0.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.caph.XCAdditions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -459,6 +460,7 @@
 				CODE_SIGN_ENTITLEMENTS = XCAdditions/XCAdditions.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"XCAdditions/Preview Content\"";
 				DEVELOPMENT_TEAM = RV6DJ2NMCD;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -469,7 +471,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 0.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.caph.XCAdditions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -482,6 +484,7 @@
 				CODE_SIGN_ENTITLEMENTS = XCAdditionsExtension/XCAdditionsExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = RV6DJ2NMCD;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = XCAdditionsExtension/Info.plist;
@@ -491,7 +494,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 0.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.caph.XCAdditions.XCAdditionsExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -505,6 +508,7 @@
 				CODE_SIGN_ENTITLEMENTS = XCAdditionsExtension/XCAdditionsExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = RV6DJ2NMCD;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = XCAdditionsExtension/Info.plist;
@@ -514,7 +518,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 0.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.caph.XCAdditions.XCAdditionsExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
