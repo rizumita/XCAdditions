@@ -4,20 +4,6 @@
 
 import Foundation
 
-public struct Line {
-    public let lineString: String
-    public let number: Int
-    
-    public init(lineString: String, number: Int) {
-        self.lineString = lineString
-        self.number = number
-    }
-    
-    public var indentLength: Int {
-        lineString.prefix { $0.isWhitespace }.count
-    }
-}
-
 public struct CursorPosition {
     public init(lineNumber: Int, column: Int) {
         self.lineNumber = lineNumber

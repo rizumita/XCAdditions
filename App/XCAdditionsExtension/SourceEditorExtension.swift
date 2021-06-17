@@ -19,6 +19,7 @@ class SourceEditorExtension: NSObject, XCSourceEditorExtension {
     var commandDefinitions: [[XCSourceEditorCommandDefinitionKey: Any]] {
         return [
             makeDefinitions(MoveToHomeCommand.self),
+            makeDefinitions(StartNewLineCommand.self),
         ]
     }
 

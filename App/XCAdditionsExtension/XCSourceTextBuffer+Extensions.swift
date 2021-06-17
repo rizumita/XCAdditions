@@ -22,6 +22,11 @@ extension XCSourceTextBuffer {
         return lines[range.start.line] as! String
     }
     
+    func endLine(for range: XCSourceTextRange) -> String {
+        assert(range.end.line < lines.count)
+        return lines[range.end.line] as! String
+    }
+    
     func removeSelections() {
         selections.removeAllObjects()
     }
