@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D6A4F5F267AB8F700E03BF6 /* MoveToHome in Frameworks */ = {isa = PBXBuildFile; productRef = 9D6A4F5E267AB8F700E03BF6 /* MoveToHome */; };
 		9D7AD3562679AAF2009873A3 /* XCSourceTextBuffer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7AD3552679AAF2009873A3 /* XCSourceTextBuffer+Extensions.swift */; };
 		9D7AD35A2679AED7009873A3 /* XCSourceTextRange+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7AD3592679AED7009873A3 /* XCSourceTextRange+Extensions.swift */; };
 		9D7AD35C2679AF23009873A3 /* XCSourceTextPosition+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7AD35B2679AF23009873A3 /* XCSourceTextPosition+Extensions.swift */; };
@@ -91,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D6A4F5F267AB8F700E03BF6 /* MoveToHome in Frameworks */,
 				9DD37039267989C5001C73F0 /* Cocoa.framework in Frameworks */,
 				9DD3704A267989CF001C73F0 /* XcodeKit.framework in Frameworks */,
 			);
@@ -181,6 +183,8 @@
 				9DD37044267989C5001C73F0 /* PBXTargetDependency */,
 			);
 			name = XCAdditions;
+			packageProductDependencies = (
+			);
 			productName = XCAdditions;
 			productReference = 9DD3701F267988B3001C73F0 /* XCAdditions.app */;
 			productType = "com.apple.product-type.application";
@@ -200,6 +204,7 @@
 			);
 			name = XCAdditionsExtension;
 			packageProductDependencies = (
+				9D6A4F5E267AB8F700E03BF6 /* MoveToHome */,
 			);
 			productName = XCAdditionsExtension;
 			productReference = 9DD37036267989C5001C73F0 /* XCAdditionsExtension.appex */;
@@ -534,6 +539,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9D6A4F5E267AB8F700E03BF6 /* MoveToHome */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MoveToHome;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9DD37017267988B3001C73F0 /* Project object */;
 }
